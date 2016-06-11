@@ -25,11 +25,29 @@ vi playbooks/aws/openshift-cluster/vars.yml
 
 ## Run Openshift Cluster installation
 
+> Clone repo and invoke install  
+
 ```sh
 https://github.com/openshift/openshift-ansible
 cd openshift-ansible
 bin/cluster create aws mycluster
 ```
+> Install Registry  
 
+```sh
+ssh centos@masterip
+sudo docker ps 
+sudo docker exec -it  masterpod_id sh
+
+oadm registry --config=/etc/origin/master/admin.kubeconfig \
+    --credentials=/etc/origin/master/openshift-registry.kubeconfig \
+    --images='registry.access.redhat.com/openshift3/ose-${component}:${version}' 
+
+# replace *origin* with *openshift*  in case of enterprise installation
+
+```
+
+
+    
 
 
