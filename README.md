@@ -1,3 +1,7 @@
+> *Background*:  This Repo covers installing openshift origin (enterprise may work too) on Atomic host  
+> Installing openshift on atomic host is no different, only thing to remember is openshift is installed as containers running on master/nodes not as rpms.   and other step is to choose Atomic host aws ami as your host image.  that's all
+
+
 ##  Initial setup
 
 > Ansible & auth keys setup 
