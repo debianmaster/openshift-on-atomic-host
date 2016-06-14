@@ -27,7 +27,7 @@ source .aws_creds
 > Clone repo and invoke install  
 
 ```sh
-https://github.com/openshift/openshift-ansible
+git clone https://github.com/openshift/openshift-ansible
 cd openshift-ansible
 ```
 > Change the ssh-user in aws config  
