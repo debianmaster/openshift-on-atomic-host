@@ -35,7 +35,7 @@ cd openshift-ansible
 ```sh
 vi playbooks/aws/openshift-cluster/vars.yml
 #ssh_user: centos
-vi ./playbooks/byo/rhel_subscribe.yml
+vi ./playbooks/byo/rhel_subscribe.yml  & vi ./playbooks/common/openshift-cluster/update_repos_and_packages.yml
 #- os_update_latest    -- comment out this entry
 ```
 > Run the cluster installation 
