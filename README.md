@@ -39,7 +39,10 @@ vi playbooks/aws/openshift-cluster/vars.yml
 > Run the cluster installation 
 
 ```sh
-bin/cluster create aws mycluster
+bin/cluster create aws --deployment-type=origin mycluster
+# if the install fails re-run with update
+bin/cluster update aws --deployment-type=origin  mycluster
+
 ```
 
 > Install Registry  
