@@ -20,12 +20,7 @@ export PATH=/opt/ansible/ansible/bin:/bin:/usr/bin:/sbin:/usr/sbin
 source .aws_creds
 ```
 
-> Change the ssh-user in aws config  
 
-```sh
-vi playbooks/aws/openshift-cluster/vars.yml
-#ssh_user: centos
-```
 
 ## Run Openshift Cluster installation
 
@@ -34,8 +29,19 @@ vi playbooks/aws/openshift-cluster/vars.yml
 ```sh
 https://github.com/openshift/openshift-ansible
 cd openshift-ansible
+```
+> Change the ssh-user in aws config  
+
+```sh
+vi playbooks/aws/openshift-cluster/vars.yml
+#ssh_user: centos
+```
+> Run the cluster installation 
+
+```sh
 bin/cluster create aws mycluster
 ```
+
 > Install Registry  
 
 ```sh
