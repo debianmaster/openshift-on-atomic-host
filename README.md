@@ -45,6 +45,7 @@ bin/cluster create aws --deployment-type=origin mycluster
 # if the install fails re-run with update
 bin/cluster update aws --deployment-type=origin  mycluster
 
+# deployment-type = openshift-enterprise   for OSE
 ```
 
 > Install Registry  
