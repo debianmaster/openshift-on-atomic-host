@@ -64,7 +64,7 @@ oadm registry --config=/etc/origin/master/admin.kubeconfig \
 
 ### Other links
 for storage
-https://access.redhat.com/solutions/2147871
+https://access.redhat.com/solutions/2147871  
 https://github.com/openshift/training/blob/master/07-Registry-and-Storage.md
 
     
